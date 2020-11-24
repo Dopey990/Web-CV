@@ -10,7 +10,8 @@
 --------------------------------------------------------------*/
 body {
 	font-family: "Open Sans", sans-serif;
-	color: #444444;
+	color: rgb(110, 110, 110);
+	background-color: black;
 }
 
 a {
@@ -301,7 +302,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
 	width: 100%;
 	height: 100vh;
-	background: url("../img/hero-bg.jpg") top right;
+	background: url("../img/background.jpg") top right;
 	background-size: cover;
 	position: relative;
 }
@@ -416,7 +417,7 @@ section {
 	text-transform: uppercase;
 	margin-bottom: 20px;
 	padding-bottom: 0;
-	color: #3b434a;
+	color: coral;
 	position: relative;
 	z-index: 2;
 }
@@ -424,10 +425,11 @@ section {
 .section-title span {
 	position: absolute;
 	top: 30px;
-	color: #eef0f2;
+	color: orange;
 	left: 0;
 	right: 0;
 	z-index: 1;
+	opacity: 0.15;
 	font-weight: 700;
 	font-size: 52px;
 	text-transform: uppercase;
@@ -542,15 +544,20 @@ section {
 
 
 .aPropos .image {
-	background: url("../img/me.jpg") center center no-repeat;
+	background: url("../img/background-main.gif") center center no-repeat;
 	background-size: cover;
-	min-height: 500px;
+	min-height: 300px;
+	min-width: 350px;
 }
 
 
 /*--------------------------------------------------------------
 # Mes compétences
 --------------------------------------------------------------*/
+
+.competences {
+	background-color: rgba(30, 30, 30, 0.3);
+}
 
 .competences table {
 	margin-left: auto;
@@ -578,7 +585,7 @@ section {
 	display: block;
 	font-weight: 700;
 	font-family: "Raleway", sans-serif;
-	color: #3b434a;
+	color: orange;
 }
 
 .competences .skills-content .progress .skill .val {
@@ -594,7 +601,7 @@ section {
 	width: 1px;
 	height: 10px;
 	transition: .9s;
-	background-color: #ffb727;
+	background-color: darkorange;
 }
 
 .competences .compteurs {
@@ -605,10 +612,14 @@ section {
 	width: 100%;
 }
 
+.competences strong {
+	color: cyan;
+}
+
 .competences .count-box i {
 	display: block;
 	font-size: 36px;
-	color: #ffb727;
+	color: rgb(150, 150, 150);
 	float: left;
 }
 
@@ -641,24 +652,24 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Mes expériences
+# Mes projets
 --------------------------------------------------------------*/
-.experiences .titre-experiences {
+.projets .projets-titre {
 	font-size: 26px;
 	font-weight: 700;
 	margin-top: 20px;
 	margin-bottom: 20px;
-	color: #3b434a;
+	color: cyan;
 }
 
-.experiences .experiences-objet {
+.projets .projets-objet {
 	padding: 0 0 20px 20px;
 	margin-top: -2px;
-	border-left: 2px solid #82909c;
+	border-left: 2px solid purple;
 	position: relative;
 }
 
-.experiences .experiences-objet h4 {
+.projets .projets-objet h4 {
 	line-height: 18px;
 	font-size: 16px;
 	font-weight: 700;
@@ -667,45 +678,34 @@ section {
 	margin-bottom: 10px;
 }
 
-.experiences .experiences-objet h5 {
+.projets .projets-objet h5 {
 	font-size: 16px;
-	background: #eef0f2;
+	background: cyan;
 	padding: 5px 15px;
 	display: inline-block;
 	font-weight: 600;
 	margin-bottom: 10px;
 }
 
-.experiences .experiences-objet ul {
+.projets .projets-objet ul {
 	padding-left: 20px;
 }
 
-.experiences .experiences-objet ul li {
+.projets .projets-objet ul li {
 	padding-bottom: 10px;
 }
 
-.experiences .experiences-objet:last-child {
+.projets .projets-objet:last-child {
 	padding-bottom: 0;
 }
 
-.experiences .experiences-objet::before {
-	content: "";
-	position: absolute;
-	width: 16px;
-	height: 16px;
-	border-radius: 50px;
-	left: -9px;
-	top: 0;
-	background: #fff;
-	border: 2px solid #82909c;
-}
 
 
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 #footer {
-	background: url("../img/footer-bg.jpg") top center no-repeat;
+	background: url("../img/footer-background.png") top center no-repeat;
 	background-size: cover;
 	color: #fff;
 	font-size: 14px;
